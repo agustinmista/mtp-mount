@@ -20,6 +20,15 @@ Built on [`mtp-rs`](https://crates.io/crates/mtp-rs) (pure-Rust MTP stack) and [
 cargo install mtp-mount
 ```
 
+### Nix
+
+A flake is provided for Linux:
+
+```sh
+nix build   # ./result/bin/mtp-mount and ./result/bin/mtp-mountd
+nix develop # Rust toolchain, fuse3, and the `just` recipes
+```
+
 ## Usage
 
 List connected devices:
